@@ -141,4 +141,13 @@ let people = [
   //  { name: 'Percy', specialization: 'JS' }
 
 
+// _.round --> method is used to compute number rounded to precision. 
+// _.isNil --> method is used to check if the value is null or undefined. return boolean true or false
+// _.toLower --> convert to lowerCase
+// _.toUpper --> convert to upperCase
+// _.pick --> property base create new object 
+// _.clone --> shadowclone / type 
+// _.groupBy --> using length or  filter the result using specific condition - (kay value pair) - mostly use in apis
+// _.reduce --> format the object and reduce the keys
+
   
