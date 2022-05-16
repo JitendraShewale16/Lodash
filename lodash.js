@@ -44,7 +44,7 @@ console.log('shuffling array :', _.shuffle(words));
 //  'forest'
 // ]
 
-//* *********  determine data *****************
+//**********  determine data *****************
 const vals = [1, 2, 'good', [1, 2], { name: 'Peter', age: 32 }];
 vals.forEach(e => {
   if (_.isNumber(e)) {
@@ -93,7 +93,7 @@ console.log(`unzip function array elements :${_.unzip(result)}`);
 console.log(`join elements with string :${_.join(nums, '-')}`);
 // output : join elements with string :1-2-3-4-5-6-7-8-9
 
-//* **********  Reverse the elements
+//***********  Reverse the elements
 // syntax : _.reverse( array )
 console.log(`Reverse elements :${_.reverse(nums)}`);
 // output : Reverse elements :9,8,7,6,5,4,3,2,1
@@ -260,18 +260,17 @@ _.delay(
 
 //*********** _.sortedUniq() - all duplicated values won’t be returned
 // syntax : _.sortedUniq(array)
-var sortedArray = [1, 1, 2, 3, 3, 3, 5, 8, 8];
-console.log('sortedUniq :',_.sortedUniq(sortedArray));
+const sortedArray = [1, 1, 2, 3, 3, 3, 5, 8, 8];
+console.log('sortedUniq :', _.sortedUniq(sortedArray));
 // output : sortedUniq : [ 1, 2, 3, 5, 8 ]
-
 
 //*********** _.deburr() -  It removes all “combining diacritical marks”, so “é” becomes “e”.
 // syntax : _.deburr([string=''])
-console.log('deburr :',_.deburr("déjà vu"));
+console.log('deburr :', _.deburr('déjà vu'));
 // output : deburr : deja vu
 
-//*********** _.groupBy() 
+//*********** _.groupBy()
 // syntax : _.groupBy( collection, iteratee )
-var user = ([6.5, 4.12, 6.8, 5.4,4.5]);
-console.log('groupBy :',_.groupBy(user, Math.floor ));
- 
+const user = [6.5, 4.12, 6.8, 5.4, 4.54];
+console.log('groupBy :', _.groupBy(user, Math.floor));
+// output : groupBy : { '4': [ 4.12, 4.5 ], '5': [ 5.4 ], '6': [ 6.5, 6.8 ] }
