@@ -1,5 +1,7 @@
 # Lodash - Important methods
 
+#### It helps in working with arrays, strings, objects, numbers, etc. It can be used directly inside a browser and also with Node.js!
+
 #### _.assign Method
 The _.assign method is the equivalent of the spread operator from ES6. It’s pretty easy to understand, it assigns properties of one or many objects to a source object.
 
