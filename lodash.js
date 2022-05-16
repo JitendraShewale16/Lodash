@@ -127,9 +127,10 @@ let people = [
     },
   ];
   let peopleCopy = _.cloneDeep(people);
-  console.log(`C++ ${peopleCopy.filter(  (person) => person.specialization == 'C++')}`);
-  // output :  [ { name: 'Arnold', specialization: 'C++' } ]
-  
+  let folksDoingCpp = peopleCopy.filter(
+    (person) => person.specialization == 'C++'
+  );
+
   for (person of folksDoingCpp) {person.specialization = 'JS';}
   console.log('person ...Convert them to JS',person);
   //person ...Convert them to JS { name: 'Arnold', specialization: 'JS' }
